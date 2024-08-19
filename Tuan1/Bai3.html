@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Câu 1
+        let dophinScore = [96, 108, 89];
+        let koalasScore = [81, 91, 110];
+
+        let sumDophin = 0;
+        let sumKoalas = 0;
+
+        for (const score of dophinScore) {
+            sumDophin += score;
+        }
+        const avgDophin = sumDophin / dophinScore.length;
+        console.log("Điểm trung bình của dophin: ", avgDophin);
+        //Câu 2
+        for (const score of koalasScore) {
+            sumKoalas += score;
+        }
+        const avgKoalas = sumKoalas / koalasScore.length;
+        console.log("Điểm trung bình của koalas: ", avgKoalas);
+        if (avgDophin < avgKoalas) {
+            console.log("Đội Koalas chiến thắng");
+        } else if (avgDophin == avgKoalas) {
+            console.log("Hai đội hòa");
+        } else {
+            console.log("Đội Dophin chiến thắng");
+        }
+        // câu 3
+        if (dolphinsAvg >= 100 && dolphinsAvg > koalasAvg) {
+            console.log("Dolphins thắng");
+        } else if (koalasAvg >= 100 && koalasAvg > dolphinsAvg) {
+            console.log("Koalas thắng");
+        } else if (dolphinsAvg === koalasAvg && dolphinsAvg >= 100) {
+            console.log("Hòa");
+        } else {
+            console.log("Không có đội nào chiến thắng");
+        }
+        // Câu 4 
+        if (dolphinsAvg === koalasAvg && dolphinsAvg >= 100 && koalasAvg >= 100) {
+            console.log("Hòa");
+        } else {
+            console.log("Không có đội nào chiến thắng");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
