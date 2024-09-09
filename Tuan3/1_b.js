@@ -33,6 +33,7 @@ export default function App() {
     marginTop: 20,
     borderWidth:0}}>NEXT</button>
       </View>
+      <View style={{flex:1,backgroundColor:'#00CCF9'}}></View>
     </View>
   );
 }

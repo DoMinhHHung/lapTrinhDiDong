@@ -64,6 +64,7 @@ export default function App() {
     fontWeight:'bold',
     fontSize:25}}>VERIFY CODE</button>
       </View>
+      <View style={{flex:1,backgroundColor:'#00CCF9'}}></View>
     </View>
   );
 }
